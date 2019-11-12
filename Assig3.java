@@ -577,13 +577,17 @@ class Hand
       String myHand = "";
       if(numCards > 0)
       {
+         
          myHand += myCards[0];
          for(int i = 1 ; i < numCards; i++)
          {
             myHand += " , " + myCards[i];
+            if(i % 4 == 0)
+                myHand += "\n";
          }
+         
       }
-      return myHand;
+      return "Hand = " + "(" + myHand + ")";
    }
 
    //Accessor
