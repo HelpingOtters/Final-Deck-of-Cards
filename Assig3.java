@@ -612,9 +612,8 @@ class Hand
 
    }
 }
-/**************************OUTPUT******************************
- * --------------------------------------------------------
---------------------------------------------------------
+/**************************OUTPUT 1******************************
+ --------------------------------------------------------
 K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS / 
 Q of CLUBS / Q of HEARTS / Q of SPADES / Q of DIAMONDS / 
 J of CLUBS / J of HEARTS / J of SPADES / J of DIAMONDS / 
@@ -640,34 +639,34 @@ T of CLUBS / T of HEARTS / T of SPADES / T of DIAMONDS /
 4 of CLUBS / 4 of HEARTS / 4 of SPADES / 4 of DIAMONDS / 
 3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIAMONDS / 
 2 of CLUBS / 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS /
-A of CLUBS / A of HEARTS / A of SPADES / A of DIAMONDS /
+A of CLUBS / A of HEARTS / A of SPADES / A of DIAMONDS / 
 
-5 of HEARTS / Q of HEARTS / 2 of SPADES / Q of DIAMONDS / 
-2 of HEARTS / 9 of CLUBS / A of HEARTS / 3 of DIAMONDS /
-3 of HEARTS / J of DIAMONDS / K of DIAMONDS / 5 of SPADES / 
-7 of SPADES / Q of SPADES / 8 of CLUBS / 7 of HEARTS /
-3 of SPADES / A of CLUBS / 7 of CLUBS / 4 of DIAMONDS /
-4 of HEARTS / 4 of SPADES / 6 of DIAMONDS / 4 of HEARTS /
-4 of CLUBS / T of SPADES / Q of HEARTS / 6 of HEARTS /
-6 of SPADES / 5 of DIAMONDS / A of CLUBS / 2 of CLUBS /
-A of SPADES / Q of CLUBS / 9 of DIAMONDS / 2 of SPADES /
-3 of DIAMONDS / J of HEARTS / 3 of CLUBS / 3 of HEARTS /
-K of HEARTS / K of SPADES / T of HEARTS / 2 of HEARTS /
-T of CLUBS / J of SPADES / Q of DIAMONDS / 2 of CLUBS /
-9 of SPADES / 9 of CLUBS / K of CLUBS / 4 of CLUBS /
-Q of CLUBS / 2 of DIAMONDS / 8 of SPADES / J of SPADES /
-9 of SPADES / Q of SPADES / 6 of CLUBS / 7 of CLUBS /
-K of HEARTS / 5 of CLUBS / 5 of DIAMONDS / A of DIAMONDS /
-2 of DIAMONDS / K of SPADES / 5 of CLUBS / 6 of SPADES /
-T of CLUBS / 4 of DIAMONDS / 8 of CLUBS / 7 of DIAMONDS /
-A of HEARTS / 7 of HEARTS / J of DIAMONDS / 4 of SPADES /
-J of CLUBS / 8 of HEARTS / 5 of HEARTS / 7 of SPADES /
-J of CLUBS / 9 of HEARTS / 3 of CLUBS / T of SPADES / 
-K of CLUBS / 7 of DIAMONDS / 9 of DIAMONDS / 5 of SPADES /
-J of HEARTS / T of DIAMONDS / T of DIAMONDS / A of SPADES /
-8 of DIAMONDS / T of HEARTS / 3 of SPADES / 6 of CLUBS /
-8 of HEARTS / K of DIAMONDS / A of DIAMONDS / 9 of HEARTS /
-8 of SPADES / 6 of HEARTS / 8 of DIAMONDS / 6 of DIAMONDS /
+Q of SPADES / Q of DIAMONDS / 9 of HEARTS / T of SPADES /
+7 of HEARTS / 6 of SPADES / 8 of HEARTS / A of CLUBS /
+K of HEARTS / 9 of CLUBS / 7 of SPADES / 2 of CLUBS /
+A of SPADES / 7 of CLUBS / 3 of CLUBS / 5 of CLUBS /
+8 of DIAMONDS / Q of HEARTS / A of DIAMONDS / T of CLUBS /
+6 of DIAMONDS / 8 of SPADES / 7 of HEARTS / 6 of DIAMONDS /
+3 of HEARTS / 8 of HEARTS / 3 of CLUBS / 3 of DIAMONDS /
+T of DIAMONDS / 4 of CLUBS / 9 of DIAMONDS / 8 of CLUBS /
+2 of SPADES / 3 of SPADES / A of DIAMONDS / Q of DIAMONDS /
+4 of SPADES / 5 of CLUBS / A of SPADES / J of HEARTS /
+5 of DIAMONDS / K of DIAMONDS / J of CLUBS / T of HEARTS /
+K of CLUBS / 5 of HEARTS / K of SPADES / 2 of HEARTS /
+5 of SPADES / 2 of CLUBS / J of SPADES / 7 of DIAMONDS /
+4 of SPADES / J of SPADES / 6 of CLUBS / K of CLUBS /
+6 of SPADES / 2 of DIAMONDS / A of HEARTS / Q of HEARTS /
+6 of HEARTS / T of CLUBS / 3 of SPADES / Q of CLUBS /
+6 of HEARTS / 4 of CLUBS / 9 of SPADES / 9 of SPADES /
+A of CLUBS / 2 of DIAMONDS / 3 of HEARTS / J of DIAMONDS /
+8 of SPADES / 8 of DIAMONDS / 9 of HEARTS / 4 of DIAMONDS / 
+J of CLUBS / 7 of CLUBS / A of HEARTS / K of HEARTS /
+4 of HEARTS / K of DIAMONDS / 4 of HEARTS / T of HEARTS /
+T of SPADES / 5 of HEARTS / 9 of DIAMONDS / 7 of DIAMONDS /
+J of DIAMONDS / 2 of HEARTS / 6 of CLUBS / 4 of DIAMONDS /
+2 of SPADES / Q of SPADES / 5 of SPADES / 5 of DIAMONDS /
+9 of CLUBS / T of DIAMONDS / Q of CLUBS / K of SPADES /
+J of HEARTS / 3 of DIAMONDS / 8 of CLUBS / 7 of SPADES /
 
 --------------------------------------------------------
 K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS /
@@ -675,7 +674,7 @@ Q of CLUBS / Q of HEARTS / Q of SPADES / Q of DIAMONDS /
 J of CLUBS / J of HEARTS / J of SPADES / J of DIAMONDS /
 T of CLUBS / T of HEARTS / T of SPADES / T of DIAMONDS /
 9 of CLUBS / 9 of HEARTS / 9 of SPADES / 9 of DIAMONDS /
-8 of CLUBS / 8 of HEARTS / 8 of SPADES / 8 of DIAMONDS /
+8 of CLUBS / 8 of HEARTS / 8 of SPADES / 8 of DIAMONDS / 
 7 of CLUBS / 7 of HEARTS / 7 of SPADES / 7 of DIAMONDS /
 6 of CLUBS / 6 of HEARTS / 6 of SPADES / 6 of DIAMONDS /
 5 of CLUBS / 5 of HEARTS / 5 of SPADES / 5 of DIAMONDS /
@@ -685,44 +684,178 @@ T of CLUBS / T of HEARTS / T of SPADES / T of DIAMONDS /
 A of CLUBS / A of HEARTS / A of SPADES / A of DIAMONDS /
 
 
-A of CLUBS / K of DIAMONDS / J of CLUBS / 7 of SPADES /
-K of CLUBS / 8 of HEARTS / 6 of CLUBS / Q of DIAMONDS /
-3 of SPADES / K of SPADES / 6 of HEARTS / 2 of CLUBS / 
-5 of SPADES / Q of CLUBS / 3 of HEARTS / Q of SPADES /
-9 of SPADES / J of HEARTS / T of HEARTS / A of DIAMONDS /
-A of SPADES / 7 of CLUBS / T of CLUBS / 8 of DIAMONDS /
-6 of SPADES / 9 of HEARTS / T of DIAMONDS / 5 of CLUBS /
-2 of HEARTS / K of HEARTS / J of DIAMONDS / 7 of DIAMONDS /
-8 of CLUBS / 7 of HEARTS / 2 of SPADES / J of SPADES /
-5 of HEARTS / 3 of DIAMONDS / Q of HEARTS / 4 of CLUBS /
-4 of SPADES / 6 of DIAMONDS / 8 of SPADES / 4 of DIAMONDS /
-3 of CLUBS / 2 of DIAMONDS / 9 of DIAMONDS / 9 of CLUBS /
-4 of HEARTS / T of SPADES / A of HEARTS / 5 of DIAMONDS /
+T of HEARTS / 7 of HEARTS / 8 of HEARTS / 3 of SPADES /
+K of HEARTS / A of SPADES / 9 of HEARTS / 2 of DIAMONDS /
+7 of SPADES / 5 of CLUBS / 6 of HEARTS / 5 of DIAMONDS /
+9 of SPADES / J of DIAMONDS / Q of SPADES / 4 of SPADES /
+8 of CLUBS / T of CLUBS / 8 of SPADES / K of SPADES /
+T of SPADES / 4 of DIAMONDS / 6 of SPADES / 3 of CLUBS /
+2 of CLUBS / 5 of HEARTS / K of DIAMONDS / 4 of CLUBS /
+9 of DIAMONDS / Q of DIAMONDS / Q of HEARTS / A of HEARTS /
+8 of DIAMONDS / 6 of CLUBS / 3 of DIAMONDS / Q of CLUBS /
+3 of HEARTS / K of CLUBS / 5 of SPADES / A of DIAMONDS /
+2 of SPADES / T of DIAMONDS / 6 of DIAMONDS / 2 of HEARTS /
+7 of DIAMONDS / A of CLUBS / 9 of CLUBS / J of CLUBS /
+7 of CLUBS / J of SPADES / J of HEARTS / 4 of HEARTS /
 
 
 Press enter to continue...
-How many hands? (1-10, please): 10
-Here are our hands, from unshuffled deck:
-1) K of CLUBS , J of SPADES , 8 of CLUBS , 6 of SPADES , 3 of CLUBS , A of SPADES
-2) K of HEARTS , J of DIAMONDS , 8 of HEARTS , 6 of DIAMONDS , 3 of HEARTS , A of DIAMONDS
-3) K of SPADES , T of CLUBS , 8 of SPADES , 5 of CLUBS , 3 of SPADES
-4) K of DIAMONDS , T of HEARTS , 8 of DIAMONDS , 5 of HEARTS , 3 of DIAMONDS
-5) Q of CLUBS , T of SPADES , 7 of CLUBS , 5 of SPADES , 2 of CLUBS
-6) Q of HEARTS , T of DIAMONDS , 7 of HEARTS , 5 of DIAMONDS , 2 of HEARTS
-7) Q of SPADES , 9 of CLUBS , 7 of SPADES , 4 of CLUBS , 2 of SPADES
-8) Q of DIAMONDS , 9 of HEARTS , 7 of DIAMONDS , 4 of HEARTS , 2 of DIAMONDS
-9) J of CLUBS , 9 of SPADES , 6 of CLUBS , 4 of SPADES , A of CLUBS
-10) J of HEARTS , 9 of DIAMONDS , 6 of HEARTS , 4 of DIAMONDS , A of HEARTS
+How many hands? (1-10, please): 2
+Here are our hands, from unshuffled deck: 
+1) Hand = (K of CLUBS , K of SPADES , Q of CLUBS , Q of SPADES , J of CLUBS
+ , J of SPADES , T of CLUBS , T of SPADES , 9 of CLUBS
+ , 9 of SPADES , 8 of CLUBS , 8 of SPADES , 7 of CLUBS
+ , 7 of SPADES , 6 of CLUBS , 6 of SPADES , 5 of CLUBS
+ , 5 of SPADES , 4 of CLUBS , 4 of SPADES , 3 of CLUBS
+ , 3 of SPADES , 2 of CLUBS , 2 of SPADES , A of CLUBS
+ , A of SPADES)
+2) Hand = (K of HEARTS , K of DIAMONDS , Q of HEARTS , Q of DIAMONDS , J of HEARTS
+ , J of DIAMONDS , T of HEARTS , T of DIAMONDS , 9 of HEARTS
+ , 9 of DIAMONDS , 8 of HEARTS , 8 of DIAMONDS , 7 of HEARTS
+ , 7 of DIAMONDS , 6 of HEARTS , 6 of DIAMONDS , 5 of HEARTS
+ , 5 of DIAMONDS , 4 of HEARTS , 4 of DIAMONDS , 3 of HEARTS
+ , 3 of DIAMONDS , 2 of HEARTS , 2 of DIAMONDS , A of HEARTS
+ , A of DIAMONDS)
 
 Here are our hands from a shuffled deck:
-1) 9 of HEARTS , J of SPADES , 3 of SPADES , Q of HEARTS , A of SPADES , 6 of HEARTS
-2) 7 of SPADES , T of DIAMONDS , 8 of SPADES , 6 of DIAMONDS , 8 of HEARTS , A of CLUBS
-3) 4 of CLUBS , J of DIAMONDS , 3 of CLUBS , 7 of CLUBS , 3 of HEARTS
-4) 2 of CLUBS , 5 of HEARTS , 2 of SPADES , 8 of DIAMONDS , 3 of DIAMONDS
-5) 6 of CLUBS , 7 of HEARTS , K of HEARTS , 6 of SPADES , 2 of HEARTS
-6) 4 of DIAMONDS , 5 of CLUBS , 8 of CLUBS , T of CLUBS , 7 of DIAMONDS
-7) J of CLUBS , K of DIAMONDS , 4 of SPADES , 5 of DIAMONDS , J of HEARTS
-8) Q of SPADES , K of CLUBS , A of HEARTS , T of HEARTS , K of SPADES
-9) 9 of CLUBS , 4 of HEARTS , 5 of SPADES , A of DIAMONDS , T of SPADES
-10) 2 of DIAMONDS , Q of DIAMONDS , 9 of SPADES , Q of CLUBS , 9 of DIAMONDS
+1) Hand = (Q of SPADES , T of SPADES , Q of HEARTS , J of SPADES , 5 of DIAMONDS
+ , 2 of DIAMONDS , Q of CLUBS , A of HEARTS , A of DIAMONDS
+ , 6 of CLUBS , 9 of HEARTS , 7 of CLUBS , 3 of DIAMONDS
+ , Q of DIAMONDS , K of HEARTS , T of HEARTS , J of HEARTS
+ , 3 of CLUBS , 8 of HEARTS , 7 of HEARTS , 4 of CLUBS
+ , 4 of DIAMONDS , 7 of SPADES , 4 of HEARTS , 2 of HEARTS
+ , 9 of CLUBS)
+2) Hand = (T of CLUBS , J of CLUBS , 5 of SPADES , 4 of SPADES , 5 of CLUBS
+ , 7 of DIAMONDS , 8 of DIAMONDS , 8 of CLUBS , 8 of SPADES
+ , 2 of SPADES , K of SPADES , 6 of DIAMONDS , 3 of SPADES
+ , T of DIAMONDS , 9 of SPADES , 6 of SPADES , 5 of HEARTS
+ , K of CLUBS , J of DIAMONDS , A of CLUBS , 3 of HEARTS
+ , A of SPADES , 6 of HEARTS , K of DIAMONDS , 9 of DIAMONDS
+ , 2 of CLUBS)
  */
+
+ /************************OutPut 2*********************************
+  * --------------------------------------------------------
+K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS / 
+Q of CLUBS / Q of HEARTS / Q of SPADES / Q of DIAMONDS / 
+J of CLUBS / J of HEARTS / J of SPADES / J of DIAMONDS / 
+T of CLUBS / T of HEARTS / T of SPADES / T of DIAMONDS / 
+9 of CLUBS / 9 of HEARTS / 9 of SPADES / 9 of DIAMONDS / 
+8 of CLUBS / 8 of HEARTS / 8 of SPADES / 8 of DIAMONDS / 
+7 of CLUBS / 7 of HEARTS / 7 of SPADES / 7 of DIAMONDS / 
+6 of CLUBS / 6 of HEARTS / 6 of SPADES / 6 of DIAMONDS / 
+5 of CLUBS / 5 of HEARTS / 5 of SPADES / 5 of DIAMONDS / 
+4 of CLUBS / 4 of HEARTS / 4 of SPADES / 4 of DIAMONDS / 
+3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIAMONDS / 
+2 of CLUBS / 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS / 
+A of CLUBS / A of HEARTS / A of SPADES / A of DIAMONDS / 
+K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS / 
+Q of CLUBS / Q of HEARTS / Q of SPADES / Q of DIAMONDS / 
+J of CLUBS / J of HEARTS / J of SPADES / J of DIAMONDS / 
+T of CLUBS / T of HEARTS / T of SPADES / T of DIAMONDS / 
+9 of CLUBS / 9 of HEARTS / 9 of SPADES / 9 of DIAMONDS / 
+8 of CLUBS / 8 of HEARTS / 8 of SPADES / 8 of DIAMONDS / 
+7 of CLUBS / 7 of HEARTS / 7 of SPADES / 7 of DIAMONDS / 
+6 of CLUBS / 6 of HEARTS / 6 of SPADES / 6 of DIAMONDS / 
+5 of CLUBS / 5 of HEARTS / 5 of SPADES / 5 of DIAMONDS / 
+4 of CLUBS / 4 of HEARTS / 4 of SPADES / 4 of DIAMONDS / 
+3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIAMONDS / 
+2 of CLUBS / 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS /
+A of CLUBS / A of HEARTS / A of SPADES / A of DIAMONDS / 
+
+8 of HEARTS / 4 of CLUBS / 9 of HEARTS / 9 of CLUBS /
+T of CLUBS / A of HEARTS / 9 of DIAMONDS / 7 of DIAMONDS /
+T of SPADES / 5 of SPADES / 4 of HEARTS / T of SPADES /
+7 of SPADES / 4 of HEARTS / 7 of DIAMONDS / A of DIAMONDS /
+7 of CLUBS / 7 of HEARTS / J of SPADES / J of HEARTS /
+5 of CLUBS / 3 of SPADES / A of CLUBS / A of CLUBS /
+J of CLUBS / 4 of SPADES / K of SPADES / 8 of SPADES /
+3 of SPADES / T of HEARTS / 7 of CLUBS / 4 of CLUBS /
+Q of CLUBS / 2 of HEARTS / A of SPADES / 6 of SPADES /
+8 of CLUBS / 2 of HEARTS / 4 of DIAMONDS / 4 of DIAMONDS /
+2 of DIAMONDS / Q of HEARTS / K of CLUBS / 2 of SPADES /
+K of DIAMONDS / 4 of SPADES / T of DIAMONDS / 9 of HEARTS /
+3 of CLUBS / 9 of CLUBS / K of HEARTS / 8 of DIAMONDS /
+Q of CLUBS / 2 of CLUBS / 8 of CLUBS / 6 of DIAMONDS /
+5 of DIAMONDS / 2 of DIAMONDS / J of DIAMONDS / 6 of CLUBS /
+3 of HEARTS / Q of SPADES / 5 of CLUBS / T of DIAMONDS /
+3 of DIAMONDS / J of HEARTS / J of SPADES / 6 of DIAMONDS /
+T of CLUBS / T of HEARTS / A of HEARTS / 5 of HEARTS /
+7 of HEARTS / J of DIAMONDS / 6 of HEARTS / 8 of DIAMONDS /
+6 of SPADES / 2 of SPADES / J of CLUBS / A of DIAMONDS /
+K of DIAMONDS / 6 of CLUBS / Q of SPADES / K of CLUBS /
+8 of SPADES / 2 of CLUBS / 3 of CLUBS / K of SPADES /
+5 of SPADES / Q of DIAMONDS / 6 of HEARTS / 3 of HEARTS /
+5 of HEARTS / 9 of SPADES / 3 of DIAMONDS / A of SPADES /
+9 of SPADES / Q of HEARTS / 9 of DIAMONDS / K of HEARTS /
+7 of SPADES / 5 of DIAMONDS / 8 of HEARTS / Q of DIAMONDS / 
+
+--------------------------------------------------------
+K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS /
+Q of CLUBS / Q of HEARTS / Q of SPADES / Q of DIAMONDS /
+J of CLUBS / J of HEARTS / J of SPADES / J of DIAMONDS / 
+T of CLUBS / T of HEARTS / T of SPADES / T of DIAMONDS /
+9 of CLUBS / 9 of HEARTS / 9 of SPADES / 9 of DIAMONDS /
+8 of CLUBS / 8 of HEARTS / 8 of SPADES / 8 of DIAMONDS / 
+7 of CLUBS / 7 of HEARTS / 7 of SPADES / 7 of DIAMONDS /
+6 of CLUBS / 6 of HEARTS / 6 of SPADES / 6 of DIAMONDS /
+5 of CLUBS / 5 of HEARTS / 5 of SPADES / 5 of DIAMONDS /
+4 of CLUBS / 4 of HEARTS / 4 of SPADES / 4 of DIAMONDS /
+3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIAMONDS /
+2 of CLUBS / 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS /
+A of CLUBS / A of HEARTS / A of SPADES / A of DIAMONDS /
+
+
+8 of DIAMONDS / A of DIAMONDS / 5 of SPADES / K of SPADES /
+6 of HEARTS / 5 of HEARTS / 2 of DIAMONDS / T of SPADES /
+6 of DIAMONDS / 4 of CLUBS / 3 of CLUBS / K of HEARTS /
+3 of SPADES / 8 of HEARTS / 7 of DIAMONDS / 9 of HEARTS /
+4 of HEARTS / A of CLUBS / 8 of SPADES / 9 of SPADES / 
+J of HEARTS / 3 of HEARTS / K of DIAMONDS / J of SPADES /
+T of DIAMONDS / 4 of SPADES / 2 of CLUBS / K of CLUBS /
+T of CLUBS / Q of SPADES / A of HEARTS / 8 of CLUBS /
+9 of CLUBS / 2 of HEARTS / 7 of SPADES / Q of DIAMONDS /
+6 of SPADES / 2 of SPADES / 6 of CLUBS / 5 of CLUBS /
+Q of CLUBS / 4 of DIAMONDS / T of HEARTS / 7 of HEARTS /
+Q of HEARTS / 7 of CLUBS / 5 of DIAMONDS / J of DIAMONDS /
+3 of DIAMONDS / 9 of DIAMONDS / A of SPADES / J of CLUBS /
+
+
+Press enter to continue...
+How many hands? (1-10, please): 8
+Here are our hands, from unshuffled deck: 
+1) Hand = (K of CLUBS , J of CLUBS , 9 of CLUBS , 7 of CLUBS , 5 of CLUBS
+ , 3 of CLUBS , A of CLUBS)
+2) Hand = (K of HEARTS , J of HEARTS , 9 of HEARTS , 7 of HEARTS , 5 of HEARTS
+ , 3 of HEARTS , A of HEARTS)
+3) Hand = (K of SPADES , J of SPADES , 9 of SPADES , 7 of SPADES , 5 of SPADES
+ , 3 of SPADES , A of SPADES)
+4) Hand = (K of DIAMONDS , J of DIAMONDS , 9 of DIAMONDS , 7 of DIAMONDS , 5 of DIAMONDS
+ , 3 of DIAMONDS , A of DIAMONDS)
+5) Hand = (Q of CLUBS , T of CLUBS , 8 of CLUBS , 6 of CLUBS , 4 of CLUBS
+ , 2 of CLUBS)
+6) Hand = (Q of HEARTS , T of HEARTS , 8 of HEARTS , 6 of HEARTS , 4 of HEARTS
+ , 2 of HEARTS)
+7) Hand = (Q of SPADES , T of SPADES , 8 of SPADES , 6 of SPADES , 4 of SPADES
+ , 2 of SPADES)
+8) Hand = (Q of DIAMONDS , T of DIAMONDS , 8 of DIAMONDS , 6 of DIAMONDS , 4 of DIAMONDS
+ , 2 of DIAMONDS)
+
+Here are our hands from a shuffled deck:
+1) Hand = (3 of SPADES , A of SPADES , K of CLUBS , J of CLUBS , Q of HEARTS
+ , A of HEARTS , T of CLUBS)
+2) Hand = (6 of SPADES , 3 of DIAMONDS , T of HEARTS , T of DIAMONDS , 2 of DIAMONDS
+ , 7 of DIAMONDS , 4 of HEARTS)
+3) Hand = (Q of CLUBS , A of DIAMONDS , K of DIAMONDS , 7 of CLUBS , 6 of DIAMONDS
+ , 5 of HEARTS , K of SPADES)
+4) Hand = (2 of SPADES , 8 of CLUBS , 5 of SPADES , 5 of CLUBS , 4 of DIAMONDS
+ , 5 of DIAMONDS , 2 of HEARTS)
+5) Hand = (9 of CLUBS , 9 of DIAMONDS , A of CLUBS , 9 of SPADES , 4 of CLUBS
+ , 4 of SPADES)
+6) Hand = (7 of HEARTS , 3 of CLUBS , 6 of CLUBS , 9 of HEARTS , Q of DIAMONDS
+ , 2 of CLUBS)
+7) Hand = (T of SPADES , 6 of HEARTS , J of DIAMONDS , J of HEARTS , 7 of SPADES
+ , J of SPADES)
+8) Hand = (K of HEARTS , 8 of SPADES , 8 of HEARTS , Q of SPADES , 8 of DIAMONDS
+ , 3 of HEARTS)
+  *********************************************/
