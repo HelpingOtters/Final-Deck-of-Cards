@@ -111,53 +111,69 @@ public class Assig3
          }
       }
 
-      //unshuffled deal 
+      // Create a new deck, and a hand for each player
+      // No suffling before the deal
       Deck d1 = new Deck();
       Hand[] myHands = new Hand[numHands];
-      int thisCard = d1.getTopCard();
+      int thisCard = d1.getTopCard();  // start with the top card of the deck
       for (int thisHand = 0; thisHand < numHands; ++thisHand)
       {
          myHands[thisHand] = new Hand();
       }
+      
+      // deal cards to each hand until all the cards are dealt from the deck
+      // one card at a time to each hand
       System.out.println("Here are our hands, from unshuffled deck: ");
       while (d1.inspectCard(thisCard-1).getErrorFlag() == false)
       {
+         // the card looks good, so give a card to each hand
+         // each hand will take turn to get a card
          for (int thisHand = 0; thisHand < numHands; ++thisHand)
          {
             if (thisCard == 0)
             {
+               // no more cards left in the deck, so stop dealing cards out
                break;
             }
-            myHands[thisHand].takeCard(d1.dealCard());
-            --thisCard;
+            myHands[thisHand].takeCard(d1.dealCard()); // give a card to a hand
+            --thisCard;  // next card from the deck
          }
       }
+      
+      // print out the cards in each hand
       for (int thisHand = 0; thisHand < numHands; ++thisHand)
       {
          System.out.println((thisHand+1) + ") " + myHands[thisHand].toString());
-         myHands[thisHand].resetHand();
+         
+         // remove the cards from the hand, prepare it for next deal
+         myHands[thisHand].resetHand(); 
       }
       System.out.println();
 
-      //Reset the deck
+      //Reset the deck to its original cards,
+      // then shuffle it before dealing the cards 
       d1.init(1); 
-      //Shuffled deck
-      d1.shuffle();
+      d1.shuffle(); //Shuffled deck
 
-      thisCard = d1.getTopCard();
+      thisCard = d1.getTopCard(); // starts from the top card of the deck
       System.out.println("Here are our hands from a shuffled deck: ");
       while (d1.inspectCard(thisCard-1).getErrorFlag() == false)
       {
+         // the card looks good, so give a card to each hand
+         // each hand will take turn to get a card
          for(int thisHand = 0; thisHand < numHands; ++thisHand)
          {
             if(thisCard == 0)
             {
-               break;
+               // no more cards left in the deck, so stop dealing cards out
+               break;  
             }
-            myHands[thisHand].takeCard(d1.dealCard());
-            --thisCard;
+            myHands[thisHand].takeCard(d1.dealCard()); // give a card to a hand
+            --thisCard; // next card from the deck
          }
       }
+      
+      // print out the cards in each hand
       for(int thisHand = 0; thisHand < numHands; ++thisHand)
       {
          System.out.println((thisHand+1) + ") " + myHands[thisHand].toString());
