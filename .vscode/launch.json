@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Assig3",
+            "request": "launch",
+            "mainClass": "Assig3",
+            "projectName": "Final-Deck-of-Cards_f57828a5"
+        }
+    ]
+}
