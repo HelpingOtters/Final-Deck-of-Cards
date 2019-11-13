@@ -13,21 +13,18 @@ import java.util.Scanner;
  * then be dealt and played. 
  */
 
+/************************************************************
+ * Phase 3
+ * @author Lindsey Reynolds
+ * @author Dan Sedano 
+ * @version 11/11/2019
+ * Description: Testing the Deck class 
+ ************************************************************/
 
 public class Assig3
 {
-   
-   /************************************************************
-    * Phase 3
-    * @author Lindsey Reynolds
-    * @author Dan Sedano 
-    * @version 11/11/2019
-    * Description: Testing the Deck class 
-    ************************************************************/
-   
    public static final int ONE_PACK = 1;
    public static final int TWO_PACK = 2;
-   
    public static void main(String[] args)
    {
 
@@ -45,7 +42,7 @@ public class Assig3
          System.out.print(deck2Pack.dealCard() + " / ");
       }         
 
-      System.out.println();
+      System.out.println("\n");
       //refills the deck
       deck2Pack.init(TWO_PACK);
 
@@ -102,7 +99,6 @@ public class Assig3
        * @version 11/11/2019
        * Description: Testing the Deck and Hand class 
        *****************************************************************/
-
       System.out.println(
          "\n----------------- Phase 4 Output ------------------------");
       
@@ -120,53 +116,69 @@ public class Assig3
          }
       }
 
-      //unshuffled deal 
+      // Create a new deck, and a hand for each player
+      // No suffling before the deal
       Deck d1 = new Deck();
       Hand[] myHands = new Hand[numHands];
-      int thisCard = d1.getTopCard();
+      int thisCard = d1.getTopCard();  // start with the top card of the deck
       for (int thisHand = 0; thisHand < numHands; ++thisHand)
       {
          myHands[thisHand] = new Hand();
       }
+      
+      // deal cards to each hand until all the cards are dealt from the deck
+      // one card at a time to each hand
       System.out.println("Here are our hands, from unshuffled deck: ");
       while (d1.inspectCard(thisCard-1).getErrorFlag() == false)
       {
+         // the card looks good, so give a card to each hand
+         // each hand will take turn to get a card
          for (int thisHand = 0; thisHand < numHands; ++thisHand)
          {
             if (thisCard == 0)
             {
+               // no more cards left in the deck, so stop dealing cards out
                break;
             }
-            myHands[thisHand].takeCard(d1.dealCard());
-            --thisCard;
+            myHands[thisHand].takeCard(d1.dealCard()); // give a card to a hand
+            --thisCard;  // next card from the deck
          }
       }
+      
+      // print out the cards in each hand
       for (int thisHand = 0; thisHand < numHands; ++thisHand)
       {
          System.out.println((thisHand+1) + ") " + myHands[thisHand].toString());
-         myHands[thisHand].resetHand();
+         
+         // remove the cards from the hand, prepare it for next deal
+         myHands[thisHand].resetHand(); 
       }
       System.out.println();
 
-      //Reset the deck
+      //Reset the deck to its original cards,
+      // then shuffle it before dealing the cards 
       d1.init(1); 
-      //Shuffled deck
-      d1.shuffle();
+      d1.shuffle(); //Shuffled deck
 
-      thisCard = d1.getTopCard();
+      thisCard = d1.getTopCard(); // starts from the top card of the deck
       System.out.println("Here are our hands from a shuffled deck: ");
       while (d1.inspectCard(thisCard-1).getErrorFlag() == false)
       {
+         // the card looks good, so give a card to each hand
+         // each hand will take turn to get a card
          for(int thisHand = 0; thisHand < numHands; ++thisHand)
          {
             if(thisCard == 0)
             {
-               break;
+               // no more cards left in the deck, so stop dealing cards out
+               break;  
             }
-            myHands[thisHand].takeCard(d1.dealCard());
-            --thisCard;
+            myHands[thisHand].takeCard(d1.dealCard()); // give a card to a hand
+            --thisCard; // next card from the deck
          }
       }
+      
+      // print out the cards in each hand
       for(int thisHand = 0; thisHand < numHands; ++thisHand)
       {
          System.out.println((thisHand+1) + ") " + myHands[thisHand].toString());
@@ -641,25 +653,26 @@ f CLUBS / 5 of HEARTS / 5 of SPADES / 5 of DIAMONDS / 4 of CLUBS / 4 of HEARTS /
  4 of SPADES / 4 of DIAMONDS / 3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIA
 MONDS / 2 of CLUBS / 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS / A of CLUBS / A 
 of HEARTS / A of SPADES / A of DIAMONDS / 
-5 of SPADES / 9 of CLUBS / T of DIAMONDS / 5 of CLUBS / 8 of DIAMONDS / 7 of HEA
-RTS / Q of DIAMONDS / 3 of DIAMONDS / 4 of SPADES / A of CLUBS / 2 of DIAMONDS /
- 7 of SPADES / 8 of HEARTS / 2 of CLUBS / A of SPADES / 2 of SPADES / T of HEART
-S / 6 of SPADES / J of HEARTS / 8 of CLUBS / A of SPADES / 6 of HEARTS / 9 of DI
-AMONDS / A of HEARTS / 3 of HEARTS / A of HEARTS / A of CLUBS / 4 of DIAMONDS / 
-4 of CLUBS / 5 of HEARTS / K of HEARTS / 7 of HEARTS / 8 of HEARTS / 3 of SPADES
- / 3 of CLUBS / J of CLUBS / 4 of DIAMONDS / T of SPADES / Q of DIAMONDS / 3 of 
-CLUBS / 2 of CLUBS / A of DIAMONDS / 5 of DIAMONDS / 3 of HEARTS / 7 of CLUBS / 
-J of DIAMONDS / K of CLUBS / 3 of DIAMONDS / T of DIAMONDS / K of SPADES / 6 of 
-SPADES / 4 of CLUBS / 5 of CLUBS / J of CLUBS / K of SPADES / 5 of SPADES / J of
- DIAMONDS / Q of CLUBS / K of HEARTS / 8 of SPADES / Q of SPADES / K of CLUBS / 
-K of DIAMONDS / 8 of CLUBS / 7 of DIAMONDS / T of CLUBS / 2 of HEARTS / 9 of SPA
-DES / 6 of CLUBS / J of SPADES / Q of CLUBS / 9 of CLUBS / 8 of DIAMONDS / Q of 
-HEARTS / 9 of HEARTS / 6 of DIAMONDS / 2 of DIAMONDS / T of SPADES / 8 of SPADES
- / 5 of HEARTS / 2 of HEARTS / 4 of HEARTS / 5 of DIAMONDS / 6 of CLUBS / A of D
-IAMONDS / 2 of SPADES / 9 of SPADES / 3 of SPADES / 4 of SPADES / Q of HEARTS / 
-7 of DIAMONDS / J of SPADES / 6 of HEARTS / 9 of HEARTS / 9 of DIAMONDS / T of H
-EARTS / 4 of HEARTS / T of CLUBS / 7 of SPADES / 7 of CLUBS / 6 of DIAMONDS / Q 
-of SPADES / J of HEARTS / K of DIAMONDS / 
+
+2 of CLUBS / T of HEARTS / A of SPADES / 5 of DIAMONDS / 5 of HEARTS / 3 of HEAR
+TS / T of HEARTS / 9 of SPADES / 9 of CLUBS / J of DIAMONDS / 3 of SPADES / 6 of
+ HEARTS / 6 of SPADES / 9 of DIAMONDS / 4 of DIAMONDS / 7 of SPADES / 8 of HEART
+S / 8 of DIAMONDS / 6 of DIAMONDS / 8 of HEARTS / K of DIAMONDS / T of CLUBS / A
+ of DIAMONDS / 3 of HEARTS / J of SPADES / K of SPADES / 9 of SPADES / 3 of CLUB
+S / 6 of HEARTS / J of CLUBS / 3 of DIAMONDS / K of HEARTS / A of CLUBS / Q of D
+IAMONDS / Q of HEARTS / 7 of HEARTS / 2 of SPADES / A of SPADES / 4 of SPADES / 
+Q of CLUBS / 4 of HEARTS / 3 of DIAMONDS / 2 of CLUBS / A of HEARTS / 3 of SPADE
+S / 7 of DIAMONDS / 2 of DIAMONDS / 6 of DIAMONDS / 8 of CLUBS / 3 of CLUBS / 7 
+of CLUBS / 5 of CLUBS / 9 of HEARTS / Q of CLUBS / 6 of CLUBS / T of DIAMONDS / 
+2 of HEARTS / J of SPADES / 9 of HEARTS / T of SPADES / A of CLUBS / Q of SPADES
+ / 4 of DIAMONDS / 5 of DIAMONDS / A of HEARTS / J of HEARTS / K of CLUBS / T of
+ SPADES / 6 of CLUBS / Q of DIAMONDS / J of HEARTS / T of CLUBS / 5 of SPADES / 
+5 of SPADES / 5 of HEARTS / 2 of DIAMONDS / 8 of SPADES / 8 of DIAMONDS / 4 of C
+LUBS / K of SPADES / 9 of CLUBS / J of CLUBS / 4 of HEARTS / 7 of CLUBS / 8 of C
+LUBS / K of CLUBS / 7 of SPADES / A of DIAMONDS / 4 of CLUBS / K of HEARTS / K o
+f DIAMONDS / 4 of SPADES / 8 of SPADES / T of DIAMONDS / 6 of SPADES / J of DIAM
+ONDS / 2 of SPADES / Q of HEARTS / 5 of CLUBS / 7 of DIAMONDS / Q of SPADES / 2 
+of HEARTS / 7 of HEARTS / 9 of DIAMONDS / 
 --------------------------------------------------------
 K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS / Q of CLUBS / Q of HEART
 S / Q of SPADES / Q of DIAMONDS / J of CLUBS / J of HEARTS / J of SPADES / J of 
@@ -672,16 +685,16 @@ IAMONDS / 3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIAMONDS / 2 of CLUBS /
 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS / A of CLUBS / A of HEARTS / A of SPAD
 ES / A of DIAMONDS / 
 
-9 of CLUBS / 7 of SPADES / 3 of CLUBS / K of SPADES / 7 of HEARTS / 9 of HEARTS 
-/ 4 of CLUBS / A of SPADES / K of CLUBS / 4 of DIAMONDS / K of HEARTS / 5 of CLU
-BS / 2 of CLUBS / Q of HEARTS / J of DIAMONDS / 6 of DIAMONDS / 8 of DIAMONDS / 
-6 of CLUBS / T of CLUBS / 3 of HEARTS / A of DIAMONDS / 5 of HEARTS / K of DIAMO
-NDS / T of DIAMONDS / T of SPADES / 9 of SPADES / 2 of HEARTS / Q of CLUBS / Q o
-f DIAMONDS / J of SPADES / 9 of DIAMONDS / 5 of DIAMONDS / 3 of SPADES / 4 of HE
-ARTS / 6 of HEARTS / 4 of SPADES / A of CLUBS / J of CLUBS / Q of SPADES / J of 
-HEARTS / 8 of CLUBS / T of HEARTS / 3 of DIAMONDS / 6 of SPADES / 5 of SPADES / 
-8 of HEARTS / 2 of SPADES / A of HEARTS / 2 of DIAMONDS / 8 of SPADES / 7 of DIA
-MONDS / 7 of CLUBS / 
+K of CLUBS / 9 of CLUBS / A of DIAMONDS / 8 of SPADES / 2 of DIAMONDS / J of DIA
+MONDS / Q of CLUBS / Q of HEARTS / Q of DIAMONDS / 8 of DIAMONDS / 3 of CLUBS / 
+9 of SPADES / 5 of SPADES / 6 of HEARTS / T of SPADES / 4 of HEARTS / J of CLUBS
+ / A of CLUBS / K of HEARTS / T of HEARTS / 4 of SPADES / 5 of DIAMONDS / T of D
+IAMONDS / 3 of HEARTS / J of HEARTS / 9 of HEARTS / 9 of DIAMONDS / Q of SPADES 
+/ 5 of CLUBS / 5 of HEARTS / 3 of SPADES / 3 of DIAMONDS / 7 of CLUBS / K of DIA
+MONDS / 6 of CLUBS / 8 of HEARTS / 7 of HEARTS / T of CLUBS / 2 of CLUBS / 6 of 
+DIAMONDS / 2 of SPADES / 2 of HEARTS / 8 of CLUBS / 4 of CLUBS / 7 of SPADES / 4
+ of DIAMONDS / A of SPADES / 7 of DIAMONDS / 6 of SPADES / A of HEARTS / J of SP
+ADES / K of SPADES / 
 
 Press enter to continue...
 
@@ -700,21 +713,22 @@ DIAMONDS , 5 of HEARTS , 5 of DIAMONDS , 4 of HEARTS , 4 of DIAMONDS , 3 of HEAR
 TS , 3 of DIAMONDS , 2 of HEARTS , 2 of DIAMONDS , A of HEARTS , A of DIAMONDS)
 
 Here are our hands from a shuffled deck: 
-1) Hand = (A of CLUBS , K of CLUBS , A of SPADES , 4 of HEARTS , 8 of SPADES , 2
- of CLUBS , 6 of CLUBS , 9 of DIAMONDS , 7 of DIAMONDS , T of CLUBS , Q of HEART
-S , 5 of DIAMONDS , 5 of SPADES , T of HEARTS , T of DIAMONDS , K of DIAMONDS , 
-T of SPADES , 9 of HEARTS , 7 of HEARTS , Q of SPADES , 9 of CLUBS , K of HEARTS
- , 5 of HEARTS , J of HEARTS , 3 of DIAMONDS , 2 of DIAMONDS)
-2) Hand = (A of HEARTS , 8 of DIAMONDS , 4 of CLUBS , 7 of SPADES , A of DIAMOND
-S , 2 of HEARTS , Q of DIAMONDS , Q of CLUBS , J of SPADES , 8 of CLUBS , 6 of S
-PADES , 7 of CLUBS , J of CLUBS , 6 of DIAMONDS , J of DIAMONDS , 4 of SPADES , 
-9 of SPADES , 3 of CLUBS , 2 of SPADES , K of SPADES , 6 of HEARTS , 5 of CLUBS 
-, 3 of SPADES , 3 of HEARTS , 4 of DIAMONDS , 8 of HEARTS)
+1) Hand = (4 of DIAMONDS , 5 of CLUBS , Q of SPADES , 6 of SPADES , 7 of DIAMOND
+S , 8 of DIAMONDS , 9 of CLUBS , K of SPADES , 9 of DIAMONDS , K of DIAMONDS , Q
+ of DIAMONDS , 5 of SPADES , A of SPADES , A of CLUBS , J of SPADES , 6 of HEART
+S , 2 of DIAMONDS , Q of HEARTS , 5 of DIAMONDS , T of DIAMONDS , 4 of HEARTS , 
+3 of CLUBS , J of DIAMONDS , 6 of CLUBS , 3 of DIAMONDS , 9 of SPADES)
+2) Hand = (8 of CLUBS , 7 of CLUBS , T of CLUBS , 2 of CLUBS , K of HEARTS , 2 o
+f HEARTS , J of CLUBS , 3 of SPADES , 6 of DIAMONDS , 7 of SPADES , 9 of HEARTS 
+, T of SPADES , A of DIAMONDS , 7 of HEARTS , 8 of HEARTS , A of HEARTS , 2 of S
+PADES , T of HEARTS , 4 of CLUBS , 5 of HEARTS , J of HEARTS , 4 of SPADES , 3 o
+f HEARTS , Q of CLUBS , K of CLUBS , 8 of SPADES)
 
  *******************************************************************/
 
  
 /**************************OUTPUT 2*********************************
+
 
 ----------------- Phase 3 Output ------------------------
 K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS / Q of CLUBS / Q of HEART
@@ -736,25 +750,26 @@ f CLUBS / 5 of HEARTS / 5 of SPADES / 5 of DIAMONDS / 4 of CLUBS / 4 of HEARTS /
  4 of SPADES / 4 of DIAMONDS / 3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIA
 MONDS / 2 of CLUBS / 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS / A of CLUBS / A 
 of HEARTS / A of SPADES / A of DIAMONDS / 
-8 of DIAMONDS / J of SPADES / T of DIAMONDS / 5 of CLUBS / Q of SPADES / 9 of CL
-UBS / 4 of CLUBS / 2 of HEARTS / 9 of SPADES / 8 of HEARTS / T of HEARTS / 5 of 
-HEARTS / T of CLUBS / 4 of SPADES / 3 of SPADES / A of HEARTS / 8 of HEARTS / 8 
-of SPADES / 7 of DIAMONDS / A of SPADES / J of DIAMONDS / 8 of SPADES / 9 of DIA
-MONDS / 4 of HEARTS / 6 of CLUBS / 6 of DIAMONDS / 3 of DIAMONDS / Q of SPADES /
- A of CLUBS / 5 of CLUBS / T of DIAMONDS / 9 of SPADES / 4 of HEARTS / K of SPAD
-ES / 6 of SPADES / A of SPADES / 3 of CLUBS / K of HEARTS / T of SPADES / 3 of C
-LUBS / 9 of HEARTS / K of DIAMONDS / 5 of DIAMONDS / 2 of SPADES / K of CLUBS / 
-2 of HEARTS / 2 of DIAMONDS / 6 of CLUBS / J of CLUBS / 7 of SPADES / 7 of HEART
-S / 7 of CLUBS / T of CLUBS / 5 of SPADES / 5 of HEARTS / J of DIAMONDS / 2 of C
-LUBS / 4 of DIAMONDS / Q of HEARTS / J of SPADES / 7 of CLUBS / 3 of SPADES / 4 
-of SPADES / 6 of DIAMONDS / 8 of CLUBS / 8 of CLUBS / A of CLUBS / 6 of SPADES /
- K of SPADES / 4 of CLUBS / Q of CLUBS / 7 of DIAMONDS / 9 of DIAMONDS / 2 of CL
-UBS / J of CLUBS / 8 of DIAMONDS / 6 of HEARTS / A of DIAMONDS / J of HEARTS / 7
- of SPADES / 2 of SPADES / A of DIAMONDS / A of HEARTS / J of HEARTS / Q of CLUB
-S / Q of DIAMONDS / T of SPADES / 9 of HEARTS / Q of DIAMONDS / 3 of DIAMONDS / 
-5 of DIAMONDS / Q of HEARTS / 9 of CLUBS / K of CLUBS / K of DIAMONDS / 6 of HEA
-RTS / 4 of DIAMONDS / 7 of HEARTS / K of HEARTS / T of HEARTS / 3 of HEARTS / 2 
-of DIAMONDS / 3 of HEARTS / 5 of SPADES / 
+
+4 of HEARTS / J of SPADES / 7 of CLUBS / T of SPADES / T of SPADES / 8 of CLUBS 
+/ J of HEARTS / 8 of DIAMONDS / 6 of SPADES / T of DIAMONDS / 8 of CLUBS / 5 of 
+CLUBS / Q of SPADES / A of CLUBS / 4 of CLUBS / 2 of CLUBS / 8 of SPADES / A of 
+CLUBS / 3 of DIAMONDS / 7 of HEARTS / Q of HEARTS / 3 of CLUBS / 2 of SPADES / 2
+ of CLUBS / 9 of CLUBS / 4 of SPADES / 5 of DIAMONDS / A of HEARTS / 5 of HEARTS
+ / A of DIAMONDS / 6 of DIAMONDS / A of HEARTS / 5 of HEARTS / Q of CLUBS / 4 of
+ HEARTS / A of SPADES / J of HEARTS / 5 of SPADES / 2 of HEARTS / 6 of CLUBS / 8
+ of SPADES / A of DIAMONDS / 3 of HEARTS / 2 of HEARTS / 3 of SPADES / 7 of DIAM
+ONDS / 2 of DIAMONDS / J of DIAMONDS / 2 of SPADES / 9 of HEARTS / 6 of SPADES /
+ K of DIAMONDS / 7 of SPADES / T of HEARTS / J of CLUBS / J of SPADES / 4 of CLU
+BS / 9 of DIAMONDS / 5 of SPADES / 8 of DIAMONDS / 6 of CLUBS / 7 of DIAMONDS / 
+T of CLUBS / 7 of SPADES / K of SPADES / 7 of CLUBS / 5 of CLUBS / J of CLUBS / 
+K of HEARTS / 9 of CLUBS / K of HEARTS / 6 of DIAMONDS / 5 of DIAMONDS / 4 of DI
+AMONDS / K of CLUBS / Q of DIAMONDS / 9 of HEARTS / 3 of CLUBS / K of CLUBS / K 
+of DIAMONDS / 4 of SPADES / Q of SPADES / 9 of SPADES / K of SPADES / T of CLUBS
+ / 3 of DIAMONDS / T of DIAMONDS / Q of HEARTS / 7 of HEARTS / 8 of HEARTS / 3 o
+f SPADES / 9 of DIAMONDS / Q of DIAMONDS / 3 of HEARTS / 8 of HEARTS / 6 of HEAR
+TS / Q of CLUBS / 4 of DIAMONDS / 2 of DIAMONDS / 9 of SPADES / J of DIAMONDS / 
+A of SPADES / 6 of HEARTS / T of HEARTS / 
 --------------------------------------------------------
 K of CLUBS / K of HEARTS / K of SPADES / K of DIAMONDS / Q of CLUBS / Q of HEART
 S / Q of SPADES / Q of DIAMONDS / J of CLUBS / J of HEARTS / J of SPADES / J of 
@@ -767,16 +782,16 @@ IAMONDS / 3 of CLUBS / 3 of HEARTS / 3 of SPADES / 3 of DIAMONDS / 2 of CLUBS /
 2 of HEARTS / 2 of SPADES / 2 of DIAMONDS / A of CLUBS / A of HEARTS / A of SPAD
 ES / A of DIAMONDS / 
 
-4 of CLUBS / 5 of DIAMONDS / A of DIAMONDS / 5 of CLUBS / 6 of CLUBS / 3 of HEAR
-TS / 9 of CLUBS / T of HEARTS / 5 of SPADES / 8 of CLUBS / 7 of HEARTS / A of SP
-ADES / K of HEARTS / K of SPADES / A of CLUBS / T of SPADES / 5 of HEARTS / T of
- DIAMONDS / K of DIAMONDS / 9 of HEARTS / 6 of SPADES / Q of HEARTS / Q of CLUBS
- / 8 of DIAMONDS / 9 of SPADES / 7 of DIAMONDS / 8 of SPADES / 6 of DIAMONDS / 3
- of CLUBS / J of CLUBS / K of CLUBS / 7 of CLUBS / Q of SPADES / Q of DIAMONDS /
- 8 of HEARTS / 7 of SPADES / 4 of SPADES / J of DIAMONDS / T of CLUBS / J of HEA
-RTS / 9 of DIAMONDS / J of SPADES / 4 of DIAMONDS / 6 of HEARTS / 2 of HEARTS / 
-4 of HEARTS / 3 of DIAMONDS / 2 of CLUBS / 2 of DIAMONDS / 3 of SPADES / A of HE
-ARTS / 2 of SPADES / 
+9 of HEARTS / 2 of CLUBS / 5 of HEARTS / 7 of SPADES / Q of SPADES / 3 of HEARTS
+ / 4 of DIAMONDS / K of DIAMONDS / J of DIAMONDS / 6 of SPADES / 7 of HEARTS / A
+ of CLUBS / 3 of SPADES / J of HEARTS / T of HEARTS / K of HEARTS / 6 of DIAMOND
+S / T of DIAMONDS / 8 of HEARTS / 8 of SPADES / 7 of CLUBS / 6 of HEARTS / 5 of 
+DIAMONDS / 4 of CLUBS / 3 of CLUBS / 2 of HEARTS / 9 of SPADES / A of HEARTS / T
+ of SPADES / J of CLUBS / Q of HEARTS / 9 of DIAMONDS / 7 of DIAMONDS / 3 of DIA
+MONDS / K of CLUBS / 5 of CLUBS / Q of DIAMONDS / 9 of CLUBS / T of CLUBS / 4 of
+ HEARTS / 2 of SPADES / Q of CLUBS / 8 of DIAMONDS / K of SPADES / 2 of DIAMONDS
+ / J of SPADES / 4 of SPADES / 8 of CLUBS / A of DIAMONDS / 5 of SPADES / 6 of C
+LUBS / A of SPADES / 
 
 Press enter to continue...
 
@@ -801,21 +816,22 @@ DIAMONDS , 3 of DIAMONDS , A of DIAMONDS)
 DIAMONDS , 2 of DIAMONDS)
 
 Here are our hands from a shuffled deck: 
-1) Hand = (4 of HEARTS , 4 of DIAMONDS , 7 of CLUBS , T of CLUBS , K of CLUBS , 
-J of SPADES , 6 of HEARTS)
-2) Hand = (9 of SPADES , Q of HEARTS , Q of CLUBS , 7 of HEARTS , 6 of CLUBS , T
- of HEARTS , A of CLUBS)
-3) Hand = (A of HEARTS , K of HEARTS , 4 of CLUBS , K of DIAMONDS , 2 of DIAMOND
-S , 4 of SPADES , 9 of HEARTS)
-4) Hand = (8 of SPADES , 7 of DIAMONDS , 2 of SPADES , A of DIAMONDS , 6 of SPAD
-ES , 3 of DIAMONDS , T of SPADES)
-5) Hand = (3 of CLUBS , 2 of CLUBS , J of DIAMONDS , 9 of CLUBS , T of DIAMONDS 
-, 5 of DIAMONDS)
-6) Hand = (Q of SPADES , K of SPADES , 5 of SPADES , 5 of CLUBS , 8 of CLUBS , J
- of CLUBS)
-7) Hand = (7 of SPADES , A of SPADES , Q of DIAMONDS , 8 of DIAMONDS , 8 of HEAR
-TS , 3 of HEARTS)
-8) Hand = (2 of HEARTS , J of HEARTS , 9 of DIAMONDS , 6 of DIAMONDS , 5 of HEAR
-TS , 3 of SPADES)
+1) Hand = (Q of SPADES , Q of HEARTS , 5 of DIAMONDS , T of HEARTS , K of HEARTS
+ , A of CLUBS , K of DIAMONDS)
+2) Hand = (9 of DIAMONDS , 3 of CLUBS , J of DIAMONDS , 5 of CLUBS , 6 of HEARTS
+ , 2 of SPADES , 6 of SPADES)
+3) Hand = (7 of CLUBS , J of SPADES , 7 of DIAMONDS , 4 of CLUBS , T of CLUBS , 
+A of DIAMONDS , Q of CLUBS)
+4) Hand = (2 of DIAMONDS , A of SPADES , A of HEARTS , Q of DIAMONDS , T of SPAD
+ES , 8 of HEARTS , 8 of SPADES)
+5) Hand = (8 of DIAMONDS , 7 of HEARTS , 3 of DIAMONDS , 8 of CLUBS , 9 of CLUBS
+ , T of DIAMONDS)
+6) Hand = (J of HEARTS , 2 of CLUBS , K of SPADES , 9 of HEARTS , 6 of CLUBS , 2
+ of HEARTS)
+7) Hand = (4 of DIAMONDS , K of CLUBS , 5 of HEARTS , 7 of SPADES , 4 of HEARTS 
+, 5 of SPADES)
+8) Hand = (9 of SPADES , 3 of SPADES , 3 of HEARTS , 6 of DIAMONDS , J of CLUBS 
+, 4 of SPADES)
+
 
 ***********************************************************************/
