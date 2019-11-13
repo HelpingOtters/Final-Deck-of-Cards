@@ -783,6 +783,7 @@ Press enter to continue...
 ----------------- Phase 4 Output ------------------------
 How many hands? (1-10, please): 8
 Here are our hands, from unshuffled deck: 
+<<<<<<< HEAD
 1) Hand = (K of CLUBS , J of CLUBS , 9 of CLUBS , 7 of CLUBS , 5 of CLUBS , 3 of
  CLUBS , A of CLUBS)
 2) Hand = (K of HEARTS , J of HEARTS , 9 of HEARTS , 7 of HEARTS , 5 of HEARTS ,
@@ -819,3 +820,40 @@ TS , 3 of HEARTS)
 TS , 3 of SPADES)
 
 ***********************************************************************/
+=======
+1) Hand = (K of CLUBS , J of CLUBS , 9 of CLUBS , 7 of CLUBS , 5 of CLUBS
+ , 3 of CLUBS , A of CLUBS)
+2) Hand = (K of HEARTS , J of HEARTS , 9 of HEARTS , 7 of HEARTS , 5 of HEARTS
+ , 3 of HEARTS , A of HEARTS)
+3) Hand = (K of SPADES , J of SPADES , 9 of SPADES , 7 of SPADES , 5 of SPADES
+ , 3 of SPADES , A of SPADES)
+4) Hand = (K of DIAMONDS , J of DIAMONDS , 9 of DIAMONDS , 7 of DIAMONDS , 5 of DIAMONDS
+ , 3 of DIAMONDS , A of DIAMONDS)
+5) Hand = (Q of CLUBS , T of CLUBS , 8 of CLUBS , 6 of CLUBS , 4 of CLUBS
+ , 2 of CLUBS)
+6) Hand = (Q of HEARTS , T of HEARTS , 8 of HEARTS , 6 of HEARTS , 4 of HEARTS
+ , 2 of HEARTS)
+7) Hand = (Q of SPADES , T of SPADES , 8 of SPADES , 6 of SPADES , 4 of SPADES
+ , 2 of SPADES)
+8) Hand = (Q of DIAMONDS , T of DIAMONDS , 8 of DIAMONDS , 6 of DIAMONDS , 4 of DIAMONDS
+ , 2 of DIAMONDS)
+
+Here are our hands from a shuffled deck:
+1) Hand = (3 of SPADES , A of SPADES , K of CLUBS , J of CLUBS , Q of HEARTS
+ , A of HEARTS , T of CLUBS)
+2) Hand = (6 of SPADES , 3 of DIAMONDS , T of HEARTS , T of DIAMONDS , 2 of DIAMONDS
+ , 7 of DIAMONDS , 4 of HEARTS)
+3) Hand = (Q of CLUBS , A of DIAMONDS , K of DIAMONDS , 7 of CLUBS , 6 of DIAMONDS
+ , 5 of HEARTS , K of SPADES)
+4) Hand = (2 of SPADES , 8 of CLUBS , 5 of SPADES , 5 of CLUBS , 4 of DIAMONDS
+ , 5 of DIAMONDS , 2 of HEARTS)
+5) Hand = (9 of CLUBS , 9 of DIAMONDS , A of CLUBS , 9 of SPADES , 4 of CLUBS
+ , 4 of SPADES)
+6) Hand = (7 of HEARTS , 3 of CLUBS , 6 of CLUBS , 9 of HEARTS , Q of DIAMONDS
+ , 2 of CLUBS)
+7) Hand = (T of SPADES , 6 of HEARTS , J of DIAMONDS , J of HEARTS , 7 of SPADES
+ , J of SPADES)
+8) Hand = (K of HEARTS , 8 of SPADES , 8 of HEARTS , Q of SPADES , 8 of DIAMONDS
+ , 3 of HEARTS)
+  *********************************************/
+>>>>>>> parent of a65aa2f... Update Assig3.java
